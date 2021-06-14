@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+  </head>
+  <body>
+    <!-- First name, last name, address, pincode, gender, choice of food(must choose at least 2 out of 5 options), state, country. -->
+
+    <div id="contanier">
+      <form class="form">
+        <div class="input">
+          <label for="first-name">First Name</label>
+          <input id="first-name" type="text" placeholder="Enter First Name" />
+        </div>
+        <div class="input">
+          <label for="last-name">Last Name</label>
+          <input id="last-name" type="text" placeholder="Enter Last Name" />
+        </div>
+        <div class="input">
+          <label for="address">Address:</label>
+          <input id="address" type="text" placeholder="Enter Address" />
+        </div>
+        <div class="input">
+          <label for="pincode">PinCode:</label>
+          <input
+            id="pincode"
+            type="number"
+            placeholder="pincode"
+            maxlength="6"
+          />
+        </div>
+        <div class="input">
+          <span>Gender:</span>
+          <label for="male">
+            <input type="radio" id="male" name="gender" value="Male" />Male
+          </label>
+          <label for="female">
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="Female"
+            />Female
+          </label>
+          <label for="others">
+            <input
+              type="radio"
+              id="others"
+              name="gender"
+              value="Others"
+            />Others</label
+          >
+        </div>
+        <div class="input">
+          <span>Food:</span>
+          <label for="apple"
+            ><input id="applie" type="checkbox" name="food" value="Apple" />
+            Apple</label
+          >
+          <label for="mango"
+            ><input id="mango" type="checkbox" name="food" value="Mango" />
+            Mango</label
+          >
+          <label for="orange"
+            ><input id="orange" type="checkbox" name="food" value="Orange" />
+            Orange</label
+          >
+          <label for="banana"
+            ><input id="banana" type="checkbox" name="food" value="Banana" />
+            Banana</label
+          >
+          <label for="grapes"
+            ><input id="grapes" type="checkbox" name="food" value="Grapes" />
+            Grapes</label
+          >
+        </div>
+        <div class="input">
+          <label for="state">State:</label>
+          <input id="state" type="text" placeholder="Enter State" />
+        </div>
+        <div class="input">
+          <label for="country">Country:</label>
+          <input id="country" type="text" placeholder="Enter Country" />
+        </div>
+
+        <input type="submit" onclick="getData(); return false" />
+      </form>
+    </div>
+
+    <table class="table-output">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Address</th>
+          <th>PinCode</th>
+          <th>Gender</th>
+          <th>Food</th>
+          <th>State</th>
+          <th>Country</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

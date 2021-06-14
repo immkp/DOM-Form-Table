@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  background: #1a2238;
+}
+.contanier {
+  max-width: 500px;
+}
+
+.table-output {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.input {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.input input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.input label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+#contanier > form > input[type='submit'] {
+  background-color: #9daaf2;
+  border: 2px solid #9daaf2;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.table-output {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table-output th {
+  background-color: #9daaf2;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.table-output th,
+.table-output td {
+  padding: 12px 15px;
+}
+
+.table-output tr td {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  font-size: 18px;
+  color: white;
+}
+
+.table-output tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+div label,
+div span {
+  color: white;
+}
